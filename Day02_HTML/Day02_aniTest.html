@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+    <style type="text/css">
+        .mybox{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-property: width, height; /* 트랜지션 대상 - 너비, 높이 */
+            transition-duration: 2s, 1s; /* 트랜지션 시간 - 2초, 1초*/
+        }
+
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: #4cff00;
+            border: 1px solid transparent;
+            animation-name: shape;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #8f06b0;
+            border: 1px solid transparent;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        .mybox:hover{
+            width: 300px;
+            height: 300px;
+        }
+
+        @keyframes shape {
+            from { border: 1px solid transparent;}
+            to {
+                border: 1px solid #000;
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: ratate(0deg); }
+            to { transform: rotate(45deg);}
+        }
+    </style>
+<body>
+    <div id="target" class="mybox">
+        <h1> Animation </h1>
+    </div>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+</body>
+</html>

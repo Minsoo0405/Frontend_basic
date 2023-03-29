@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework1</title>
+    <link rel="stylesheet" href="Day02_Homework1.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h2> 상품선택 </h2></legend>
+
+            <label id="productSelect" for="product"><h3> 주문할 상품을 선택해주세요</h2></label>
+                <div>
+                 <input type="checkbox" id="product"> 
+                 <label> 선물용 3kg </label>
+                 <input type="number" id="present" size="2">
+                 <label> 개 (최대 5개) </label>
+                </div>
+
+                <div>
+                 <input type="checkbox" id="product"> 
+                 <label> 선물용 5kg </label>
+                 <input type="number" id="present" size="2">
+                 <label> 개 (최대 3개) </label>
+                </div>
+
+                <div>
+                 <input type="checkbox" id="product"> 
+                 <label> 가정용 3kg </label>
+                 <input type="number" id="present" size="2">
+                 <label> 개 (최대 5개) </label>
+                </div>
+
+                <div>
+                 <input type="checkbox" id="product"> 
+                 <label> 가정용 5kg </label>
+                 <input type="number" id="present" size="2">
+                 <label> 개 (최대 3개) </label>
+                </div>
+
+            <label for=packing"><h3> 포장 선택 </h3></label>
+                <div>
+                 <input type="radio" id="packingTrue"> 
+                 <label> 선물포장 </label>
+                </div>
+
+                <div>
+                 <input type="radio" id="packingFalse"> 
+                 <label> 선물포장 안함 </label>
+                </div>
+        </fieldset>
+
+        <fieldset class="deliveryInfo">
+            <legend><h2> 배송 정보 </h2></legend>
+
+                <div>
+                 <label for="userName"> 이름  </label>
+                 <input type="text" id="userName" size="20" placeholder="이름을 입력해주세요">
+                </div>
+                
+                <div>
+                 <label for="addr"> 배송 주소  </label>
+                 <input type="text" id="addr" size="20" placeholder="배송지를 입력해주세요">
+                </div>
+
+                <div>
+                 <label for="email"> 이메일  </label>
+                 <input type="email" id="email" size="20" placeholder="이메일을 입력해주세요">
+                </div>
+
+                <div>
+                 <label for="phone"> 연락처 </label>
+                 <input type="tel" id="phone" size="20" placeholder="연락처를 입력해주세요">
+                </div>
+
+                <div>
+                 <label for="deliveryDate"> 배송 지정일 </label>
+                 <div>
+                    <input type="date" id="deliveryDate" size="20">
+                    <label> (주문일로부터 최소 3일 이후) </label>
+                </div>
+                </div>
+
+                <div>
+                 <label for="memo"> 메모 </label>
+                 <textarea name="memo" rows="3" cols="20">
+                 </textarea>
+                </div>
+        </fieldset>
+
+        <div class="btnGroup">
+         <input type="button" value="주문하기">
+         <input type="button" value="취소하기">
+        </div>
+    </form>
+    
+</body>
+</html>

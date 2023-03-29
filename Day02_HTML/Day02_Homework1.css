@@ -1,0 +1,58 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: Verdana, sans-serif; /* 글꼴 변경 */
+  }
+
+fieldset {
+    line-height: 20px;
+
+    padding: 15px 20px;
+  }
+  
+legend {
+    font-size: 20px; /* legend 폰트 크기 */
+    font-weight: bold; /* legend 폰트 굵기 */
+  }
+  
+#productSet label {
+    display: inline-block;
+    width: 80px; /* label 너비 고정 */
+    font-size: 0.78em;
+  }
+input[type="number"] {
+    width: 40px;
+}
+
+.deliveryInfo div {
+    display: flex;
+    align-items: center; /* 가로 정렬 */
+    margin-bottom: 10px;
+  }
+
+.deliveryInfo label {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.deliveryInfo input[type="text"],
+.deliveryInfo input[type="email"],
+.deliveryInfo input[type="tel"],
+.deliveryInfo textarea {
+    width: 300px; /* input 태그 너비 고정 */
+  }
+
+.btnGroup {
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-evenly
+    }
+    
+.btnGroup button {
+    width: 150px;
+    height: 50px;
+    }
+  

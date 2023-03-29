@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        form label {
+            display: inline-block;
+            width: 120px; /* label과 input 사이의 간격 조절 */
+        }
+        input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend> 배송 정보 </legend>
+
+            <div>
+            <label for="orderItem"> 주문상품 : </label>
+            <input type="text" id="orderItem" value="상품AG1001" readonly placeholder="주문상품 번호를 입력해주세요">
+            </div>
+
+            <div>
+            <label for="userName"> 이름 : </label>
+            <input type="text" id="userName" autofocus placeholder="이름을 입력해주세요">
+            </div>
+            
+            <div>
+            <label for="addr"> 배송 주소 : </label>
+            <input type="text" id="addr" size="40" placeholder="배송주소를 입력해주세요">
+            </div>
+
+            <div>
+            <label for="email"> 이메일 : </label>
+            <input type="text" id="email" placeholder="이메일을 입력해주세요" required>
+            </div>
+
+            <div>
+            <label for="phone"> 연락처 : </label>
+            <input type="tel" id="phone" placeholder="연락처를 입력해주세요">
+            </div>
+
+            <div>
+            <label for="ddate"> 배송 지정일 : </label>
+            <input type="text" id="ddate" size="20" placeholder="배송 지정일을 입력해주세요">
+            </div>
+        </fieldset>
+        <input type="submit" value="test">
+    </form submit>
+</body>
+</html>
