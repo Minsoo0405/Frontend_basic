@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<script>
+    //배열리터럴
+    var arr = [10,20,30,40,50];
+    var sarr = ['Hello', 'world', 'apple'];
+    //배열 = 숫자, 문자열, 논리값, 함수리터럴(코드), 객체, 배열
+    var jsarr = [10,27.8, 'Hello', function() { }, ['apple','banna'], {}];
+
+    for(var i in arr) {
+        document.write("<h1 style='color:blue'>" +arr[i]+ "</h2>");
+    }
+
+    //객체리터럴 = JSON
+    //클래스 선언 없이 객체 정의
+    var pobj = {
+        x:100, //인스턴스 변수
+        y:200, // this.x, this.y
+        myShape : 'Player',
+        display : function(){
+            var x ='inner';
+            document.write('<h2> x=' +this.x+ ",y=" +this.y+ ":" +this.myShape+ '</h2>')
+        },
+        moveLeft:function(){
+            this.x = this.x -1;
+            this.display();
+
+        },
+        moveRight: function(){
+            this.y = this.y +1;
+            this.display();
+        }
+    };
+
+    var eobj = {
+        x:150, //인스턴스 변수
+        y:180, // this.x, this.y
+        myShape : 'Enemy',
+        display : function(){
+            var x ='inner';
+            document.write('<h2> x=' +this.x+ ",y=" +this.y+ ":" +this.myShape+ '</h2>')
+        },
+        moveLeft:function(){
+            this.x = this.x -1;
+            this.display();
+
+        },
+        moveRight: function(){
+            this.y = this.y +1;
+            this.display();
+        }
+    };
+
+    pobj.display(); //객체리터럴
+    eobj.display();
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

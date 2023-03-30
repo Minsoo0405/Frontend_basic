@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+              // 함수 - 전역함수 선언
+              function show() { // 함수이름 반드시 명시 
+                return;
+            };
+            // 함수리터럴 - 익명함수 선언(명시적인 이름이 없다)
+            var display = function() {
+                var fname = 'display';
+                window.alert("func call : "+fname);
+            };
+
+            // 출력명령
+            window.document.write("<h2>"+ display +"</h2>");
+            display(); //함수리터럴 --> 함수(명령어집합) 실행가능
+
+    </script>
+</head>
+<body>
+    <h1 id="h"> Click 해보세요 </h1>
+    <script>
+        var hobj = window.document.getElementById('h');
+        //이벤트처리기
+        hobj.onmouseover = function() {
+            this.style.color = 'red';
+        };
+
+        hobj.onmouseout = function() {
+            this.style.color = 'black';
+        };
+
+
+    </script>
+</body>
+</html>

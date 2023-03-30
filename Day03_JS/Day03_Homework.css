@@ -1,0 +1,58 @@
+* { margin:0px; padding:0px; }
+
+html{
+    display: flex;
+    justify-content: center;
+}
+
+/* Animation Canvas */
+.animation_canvas  {
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+    height: 400px;     
+};
+    
+/* Slider Panel */
+.slider_panel {     
+    position: relative;
+
+}
+.slider_image { 
+    float: left;
+    width: 600px;
+    height: 400px;
+ }
+    
+/* Slider Text Panel */
+.slider_text_panel { 
+    top: 200px;
+    left: 50px;
+    position: absolute;
+    color: white;
+  }
+.slider_text { 
+    width: 250px;
+    height: 150px;
+    color: beige;
+    position: absolute;
+}
+    
+/* Control Panel */
+.control_panel  {
+    position: absolute;
+    top: 380px;
+    left: 270px;
+    height: 13px;
+    overflow: hidden;          
+}
+.control_button {
+    width: 12px;
+    height: 46px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    background:url("./jquery_slide_image_과제예제/point_button.png");            
+}
+.control_button:hover { top:-16px; }
+.control_button.active { top:-31px; }
