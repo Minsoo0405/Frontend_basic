@@ -15,6 +15,7 @@ html{
     
 /* Slider Panel */
 .slider_panel {     
+    width: 3000px;
     position: relative;
 
 }
@@ -22,7 +23,7 @@ html{
     float: left;
     width: 600px;
     height: 400px;
- }
+}
     
 /* Slider Text Panel */
 .slider_text_panel { 
@@ -44,7 +45,7 @@ html{
     top: 380px;
     left: 270px;
     height: 13px;
-    overflow: hidden;          
+    overflow: hidden;
 }
 .control_button {
     width: 12px;
